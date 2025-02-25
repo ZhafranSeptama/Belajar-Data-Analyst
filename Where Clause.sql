@@ -18,7 +18,7 @@ select *
 from employee_demographics
 where first_name Like '%jer___%';
 
-# kalo _ buat menyatakan karakter setelahnya contoh A__ berarti setelah ada 2 karakter 
+# kalo _ buat menyatakan karakter setelahnya contoh A__ berarti setelah char a ada 2 karakter 
 # kalo % sama tapi infinite
 
 
