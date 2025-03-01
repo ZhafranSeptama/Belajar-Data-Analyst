@@ -16,7 +16,11 @@ FROM employee_salary;
 
 -- Advanced subqueri 
 SELECT gender, AVG(Min_age)
-FROM (SELECT gender, MIN(age) Min_age, MAX(age) Max_age, COUNT(age) Count_age ,AVG(age) Avg_age
+FROM (SELECT gender,
+	MIN(age) as Min_age, 
+	MAX(age) as Max_age, 
+	COUNT(age) as Count_age,
+	AVG(age) as Avg_age
 FROM employee_demographics
 GROUP BY gender) AS Agg_Table
 GROUP BY gender
